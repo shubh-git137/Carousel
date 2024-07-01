@@ -70,3 +70,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Carousel and Redux implementation
+
+# Step-1:
+
+- npm install @reduxjs/toolkit
+
+# Step-2:
+
+- Create a store with help of configureStore (@reduxjs/toolkit)
+  configureStore({
+
+  }
+  )
+
+# Step-3:
+
+- Create a slice with help of createSlice (@reduxjs/toolkit)
+
+    createSlice({
+    name: 'your store name',
+    intitialState, //of your store
+    reducers: {
+    incremnt (state) {
+    }
+    //like this your reducers functions
+    })
+    export your reducers actions or function 
+
+    export const {increment} = yourSlice.actions;
+    export yourSlice.reducer;
+
+# Step-4:
+- After Create slice we will subscribe our store.
+
+# Step-5
+- npm install react-redux
